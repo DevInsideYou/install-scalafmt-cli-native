@@ -17,7 +17,8 @@ curl -L $SOURCE -o $ZIP
 unzip -qq $ZIP
 rm $ZIP
 sudo mv scalafmt $TARGET
-sudo chmod +x $TARGET
+sudo chmod 755 $TARGET
+sudo chown root:root $TARGET
 
 echo
 scalafmt-native --version
