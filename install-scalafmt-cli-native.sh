@@ -3,7 +3,7 @@
 # remove yourself
 rm $0
 
-FALLBACK_VERSION="2.6.1"
+FALLBACK_VERSION="2.6.3"
 VERSION="${1:-$FALLBACK_VERSION}"
 ZIP="scalafmt-linux.zip"
 SOURCE=https://github.com/scalameta/scalafmt/releases/download/v$VERSION/$ZIP
