@@ -3,19 +3,21 @@
 # remove yourself
 rm $0
 
-FALLBACK_VERSION="2.7.3"
+FALLBACK_VERSION="2.7.4"
 VERSION="${1:-$FALLBACK_VERSION}"
 SOURCE=https://github.com/scalameta/scalafmt/releases/download/v$VERSION/scalafmt-linux-musl
-TARGET=/usr/local/bin/scalafmt-native
+DIR=~/bin
+TARGET=$DIR/scalafmt-native
 
-# install curl
-sudo apt install -yqqq curl
+mkdir -p $DIR
 
 # install scalafmt-native
-sudo curl -L $SOURCE -o $TARGET
+curl -L $SOURCE -o $TARGET
+
+chmod +x $TARGET
 
 echo
 scalafmt-native --version
 
 echo
-echo \""scalafmt-native"\" is now on the path
+echo '"scalafmt-native"' is now on the path

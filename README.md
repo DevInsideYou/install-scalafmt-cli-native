@@ -1,13 +1,13 @@
-# Installs [Scalafmt CLI Native:2.7.3 (musl)](https://scalameta.org/scalafmt/) on [Ubuntu](https://www.ubuntu.com/)
+# Installs [Scalafmt CLI Native:2.7.4 (musl)](https://scalameta.org/scalafmt/) on [Ubuntu](https://www.ubuntu.com/)
 
 ```bash
 wget -q https://script.install.devinsideyou.com/scalafmt-cli-native
-sudo chmod +x scalafmt-cli-native && ./scalafmt-cli-native
+curl -fLOs chmod +x scalafmt-cli-native && ./scalafmt-cli-native
 ```
 
 # Specifies [version](https://github.com/scalameta/scalafmt/releases) (optional)
 
 ```bash
-wget -q https://script.install.devinsideyou.com/scalafmt-cli-native
-sudo chmod +x scalafmt-cli-native && ./scalafmt-cli-native 2.7.3
+curl -fLOs -q https://script.install.devinsideyou.com/scalafmt-cli-native
+chmod +x scalafmt-cli-native && ./scalafmt-cli-native 2.7.4
 ```
