@@ -3,7 +3,7 @@
 # remove yourself
 rm $0
 
-FALLBACK_VERSION="2.7.4"
+FALLBACK_VERSION="2.7.5"
 VERSION="${1:-$FALLBACK_VERSION}"
 SOURCE=https://github.com/scalameta/scalafmt/releases/download/v$VERSION/scalafmt-linux-musl
 DIR=~/bin
